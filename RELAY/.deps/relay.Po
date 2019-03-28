@@ -1,0 +1,94 @@
+../../../click/RELAY/relay.o: ../../../click/RELAY/relay.c \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdc-predef.h \
+ ../../../click/RELAY/relay.h \
+ /usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/5.3.0/include/stdint.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdint.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/features.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/cdefs.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/wordsize.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/gnu/stubs.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/gnu/stubs-soft.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/wchar.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdlib.h \
+ /usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/5.3.0/include/stddef.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/waitflags.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/waitstatus.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/endian.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/endian.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/byteswap.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/types.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/typesizes.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/byteswap-16.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/types.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/time.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/select.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/select.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/sigset.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/time.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/sysmacros.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/pthreadtypes.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/alloca.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/stdlib-bsearch.h \
+ /usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/stdlib-float.h
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdc-predef.h:
+
+../../../click/RELAY/relay.h:
+
+/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/5.3.0/include/stdint.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdint.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/features.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/cdefs.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/wordsize.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/gnu/stubs.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/gnu/stubs-soft.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/wchar.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/stdlib.h:
+
+/usr/local/oecore-x86_64/sysroots/x86_64-oesdk-linux/usr/lib/arm-oe-linux-gnueabi/gcc/arm-oe-linux-gnueabi/5.3.0/include/stddef.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/waitflags.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/waitstatus.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/endian.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/endian.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/byteswap.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/types.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/typesizes.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/byteswap-16.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/types.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/time.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/select.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/select.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/sigset.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/time.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/sys/sysmacros.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/pthreadtypes.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/alloca.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/stdlib-bsearch.h:
+
+/usr/local/oecore-x86_64/sysroots/cortexa7-neon-vfpv4-oe-linux-gnueabi/usr/include/bits/stdlib-float.h:

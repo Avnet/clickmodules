@@ -2,6 +2,7 @@
 #define __LCDMINI_H__
 
 #include <stdint.h>
+#include <stdarg.h>
 
 // LCD commands
 #define LCD_CLEARDISPLAY        0x01
@@ -44,28 +45,33 @@
 #define LCD_LINES               2
 #define LCD_DOTSIZE             LCD_5x8DOTS
 
+#define ON                      1
+#define OFF                     0
+#define RIGHT2LEFT              1
+#define GO_LEFT                 0
+#define GO_RIGHT                1
+#define LEFT2RIGHT              0
 
-int  open_lcdmini( void *(init)(int), void (*cs1)(int), void (*cs2)(int), void (*rst)(int), 
-                   void (*fpwm)(int), void (*spi_tx)uint16_t, uint8_t*, int);
-void close_lcdmini( void );
+#define _delay(x) (usleep(x*1000))   //macro to provide ms pauses
 
-void setBacklight(uint16_t bl);
-void display(int on);
-void cursor(int on);
-void blink(int on);
+int    open_lcdmini(void (*init)(),void (*cs1)(),void (*cs2)(),void (*rst)(),void (*fpwm)(),void (*spi_tx)(uint8_t*,int));
+void   close_lcdmini( void );
+int    lcd_setCursor(uint8_t col, uint8_t row);
+void   lcd_setBacklight(uint16_t inten);
+void   lcd_display(int on);
+void   lcd_cursor(int on);
+void   lcd_blink(int on);
+void   lcd_clearDisplay(void);
+void   lcd_home(void);
+void   lcd_autoscroll(int on);
+void   lcd_scrollDisplay(int left);
+void   lcd_textOutputDirection(int goRight) ;
+void   lcd_setContrast(uint8_t contrast);
+void   lcd_createChar(uint8_t location, uint8_t charmap[]);
 
-void scrollDisplayLeft(void) ;
-void scrollDisplayRight(void) ;
-void textLeft2Right(void) ;
-void textRight2Left(void) ;
-void autoscroll(void) ;
-void noAutoscroll(void) ;
-void createChar(uint8_t location, uint8_t charmap[]) ;
-void clearDisplay();
-void home();
-void setLCDdimensions(int row0, int row1, int row2, int row3);
-void setCursor(uint8_t col, uint8_t row);
-void setContrast(uint8_t contrast);
+size_t lcd_printf(const char *fmt, ...);
+int    lcd_puts(const char *);
+int    lcd_putchar(uint8_t);
 
 #endif  //__LCDMINI_H__
 

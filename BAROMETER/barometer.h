@@ -18,7 +18,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-#define LPS25HB_SAD      (0x5d<<1)
+#define LPS25HB_SAD      (0x5d)
 #define LPS25HB_WHO_AM_I 0xbd
 
 #define ZERO_KELVIN      -273.15

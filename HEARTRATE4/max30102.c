@@ -61,7 +61,6 @@
 */
 #include "max30102.h"
 #include "algorithm_by_RF.h"
-#include <hwlib/hwlib.h>
 
 //extern i2c_handle_t  i2c_handle;
 static int (*_i2c_read)( uint8_t addr, uint16_t count, uint8_t* ptr );

@@ -16,7 +16,8 @@ BAROMETER* open_barometer(uint8_t (*rb)(uint8_t a), void (*wb)(uint8_t a, uint8_
 ))
 ```
 The user provides a read-byte and write-byte function for the sensor.  The clickmodule software requires  the read-byte function accepts a register address and returns the byte read and the write-byte function expects to be provided a register address and a value that should be written to the register.  For this particular sensor, the I/O is I2C (varies depending on the sensor used). 
-3. close_\<xxx> - This function will close and free any memory that was allocated when the sensor was opened. For example, using the BAROMETER sensor example:
+
+2. close_\<xxx> - This function will close and free any memory that was allocated when the sensor was opened. For example, using the BAROMETER sensor example:
 ```
 close_barometer(BAROMETER* b)
 ```

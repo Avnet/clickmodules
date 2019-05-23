@@ -35,9 +35,9 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.lib.debug.option.optimization.level.854377726" name="Optimization Level" superClass="gnu.c.compiler.lib.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.lib.debug.option.debugging.level.1904662081" name="Debug Level" superClass="gnu.c.compiler.lib.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1084570757" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/OLED-B"/>
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/LIGHTRANGER/platform/inc"/>
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/LIGHTRANGER/core/inc"/>
+									<listOptionValue builtIn="false" value="../OLED-B"/>
+									<listOptionValue builtIn="false" value="../LIGHTRANGER/platform/inc"/>
+									<listOptionValue builtIn="false" value="../LIGHTRANGER/core/inc"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.538927277" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
@@ -85,9 +85,9 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.lib.release.option.optimization.level.1048794912" name="Optimization Level" superClass="gnu.c.compiler.lib.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.lib.release.option.debugging.level.1202644667" name="Debug Level" superClass="gnu.c.compiler.lib.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1756795654" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/LIGHTRANGER/platform/inc"/>
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/LIGHTRANGER/core/inc"/>
-									<listOptionValue builtIn="false" value="/home/jim/Avnet/clickmodule/OLED-B"/>
+									<listOptionValue builtIn="false" value="../LIGHTRANGER/platform/inc"/>
+									<listOptionValue builtIn="false" value="../LIGHTRANGER/core/inc"/>
+									<listOptionValue builtIn="false" value="..//OLED-B"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1210925492" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>

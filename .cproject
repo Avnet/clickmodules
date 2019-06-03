@@ -87,7 +87,7 @@
 								<option id="gnu.c.compiler.option.include.paths.1756795654" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="../LIGHTRANGER/platform/inc"/>
 									<listOptionValue builtIn="false" value="../LIGHTRANGER/core/inc"/>
-									<listOptionValue builtIn="false" value="..//OLED-B"/>
+									<listOptionValue builtIn="false" value="../OLED-B"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1210925492" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>

@@ -5,6 +5,19 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+// defines for MCP4161
+#define MCP4161_WIPER           0x00
+
+// defines for MCP23S17; the lcd-mini click uses Bank #0
+#define MCP23S17_OLATB          0x15
+#define MCP23S17_GPIOB          0x13
+#define MCP23S17_IODIRB         0x01
+#define MCP23S17_IOCON          0x0A  // Shared Register 
+#define MCP23S17_OPCODE         0x40  // Control Byte: "0100 A2 A1 A0 R/W" -- W=0
+
+#define LCD_RST                 0x04  //corresponds to GPB2 on MCP23S17
+#define LCD_ENABLE              0x08  //corresponds to GPB3 on MCP23S17
+
 // LCD commands
 #define LCD_CLEARDISPLAY        0x01
 #define LCD_RETURNHOME          0x02
@@ -53,9 +66,16 @@
 #define GO_RIGHT                1
 #define LEFT2RIGHT              0
 
-#define _delay(x) (usleep(x*1000))   //macro to provide ms pauses
+//#define _delay(x) (usleep(x*1000))   //macro to provide ms pauses
 
-int    open_lcdmini(void (*init)(),void (*cs1)(),void (*cs2)(),void (*rst)(),void (*fpwm)(),void (*spi_tx)(uint8_t*,int));
+int open_lcdmini(
+	void(*init)(void),
+	void(*cs1)(int),
+	void(*cs2)(int),
+	void(*rst)(int),
+	void(*fpwm)(int),
+	void(*spi_tx)(uint8_t*, int),
+	void(*delay_us)(uint16_t));
 void   close_lcdmini( void );
 int    lcd_setCursor(uint8_t col, uint8_t row);
 void   lcd_setBacklight(uint16_t inten);
@@ -71,8 +91,8 @@ void   lcd_setContrast(uint8_t contrast);
 void   lcd_createChar(uint8_t location, uint8_t charmap[]);
 
 size_t lcd_printf(const char *fmt, ...);
-int    lcd_puts(const char *);
-int    lcd_putchar(uint8_t);
+void   lcd_puts(const char *);
+void   lcd_putchar(uint8_t);
 
 #endif  //__LCDMINI_H__
 

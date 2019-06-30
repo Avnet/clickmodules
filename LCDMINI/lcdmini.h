@@ -3,7 +3,6 @@
 
 #include <stdint.h>
 #include <stdarg.h>
-#include <unistd.h>
 
 // defines for MCP4161
 #define MCP4161_WIPER           0x00
@@ -68,6 +67,10 @@
 
 //#define _delay(x) (usleep(x*1000))   //macro to provide ms pauses
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int open_lcdmini(
 	void(*init)(void),
 	void(*cs1)(int),
@@ -93,6 +96,10 @@ void   lcd_createChar(uint8_t location, uint8_t charmap[]);
 size_t lcd_printf(const char *fmt, ...);
 void   lcd_puts(const char *);
 void   lcd_putchar(uint8_t);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif  //__LCDMINI_H__
 

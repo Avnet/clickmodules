@@ -93,6 +93,10 @@
 #define REG_REV_ID          0xFE
 #define REG_PART_ID         0xFF
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 int     maxim_max30102_init(void);
 int     maxim_max30102_read_fifo(uint32_t *pun_red_led, uint32_t *pun_ir_led);
 int     maxim_max30102_write_reg(uint8_t uch_addr, uint8_t uch_data);
@@ -102,5 +106,9 @@ uint8_t max30102_get_part_id(void);
 uint8_t max30102_get_revision(void);
 void    max301024_shut_down(int);
 void    maxim_max30102_i2c_setup( int (*rd)( uint8_t addr, uint16_t count, uint8_t* ptr ), void (*wr)( uint8_t addr, uint16_t count, uint8_t* ptr ));
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /*  MAX30102_H_ */

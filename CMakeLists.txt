@@ -1,6 +1,10 @@
 
-CMAKE_MINIMUM_REQUIRED(VERSION 3.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+
 project( libclick C )
+
+azsphere_configure_tools(TOOLS_REVISION "20.04") 
+azsphere_configure_api(TARGET_API_SET "5")
 
 set( clickmodules_inc "LIGHTRANGER/core/inc" "LIGHTRANGER/platform/inc" "AIRQUALITY5" "BAROMETER"  )
 set( clickmodules_inc ${clickmodules_inc} "FLAME" "HEARTRATE4" "LCDMINI" "LSM6DSL" "OLED-B" "RELAY" "TEMP_HUM" )

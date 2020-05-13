@@ -123,7 +123,7 @@ void maxim_max30102_i2c_setup( int (*rd)( uint8_t addr, uint16_t count, uint8_t*
 */
 int maxim_max30102_init()
 {
-  if(!maxim_max30102_write_reg(REG_INTR_ENABLE_1,0xc0)) // INTR setting
+  if(!maxim_max30102_write_reg(REG_INTR_ENABLE_1,0b11010000)) // INTR setting
     return 0;
   if(!maxim_max30102_write_reg(REG_INTR_ENABLE_2,0x00))
     return 0;
@@ -146,7 +146,7 @@ int maxim_max30102_init()
     return 0;
   if(!maxim_max30102_write_reg(REG_PILOT_PA,0x7f))   // Choose value for ~ 25mA for Pilot LED
     return 0;
-  return 1;  
+  return 1;
 }
 
 /**
@@ -240,4 +240,31 @@ void max301024_shut_down(int  yes)
     maxim_max30102_write_reg(REG_MODE_CONFIG,temp);
 }
 
+int max30102_data_available()
+{
+    uint8_t reg;
 
+    maxim_max30102_read_reg(REG_INTR_STATUS_1, &reg);
+//    if (reg & 0b10000000)
+//        Log_Debug("data_available=%02X!\n", reg);
+    return (reg & 0b10000000);
+}
+
+int max30102_finger_detected()
+{
+    uint8_t reg;
+
+
+    if (!maxim_max30102_write_reg(REG_PROX_INT_THRESH, 0xff))
+        return 0;
+    if (!maxim_max30102_write_reg(REG_INTR_ENABLE_1, 0b00010000)) // INTR setting
+        return 0;
+
+    maxim_max30102_read_reg(REG_INTR_STATUS_1, &reg);
+//    if (reg & 0b00010000)
+//        Log_Debug("finger detect=%02X!\n", reg);
+
+    if (!maxim_max30102_write_reg(REG_INTR_ENABLE_1, 0b11000000)) // INTR setting
+        return 0;
+    return (reg & 0b00010000);
+}

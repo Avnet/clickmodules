@@ -106,6 +106,8 @@ uint8_t max30102_get_part_id(void);
 uint8_t max30102_get_revision(void);
 void    max301024_shut_down(int);
 void    maxim_max30102_i2c_setup( int (*rd)( uint8_t addr, uint16_t count, uint8_t* ptr ), void (*wr)( uint8_t addr, uint16_t count, uint8_t* ptr ));
+int     max30102_data_available(void);
+int     max30102_finger_detected(void);
 
 #ifdef __cplusplus
 }

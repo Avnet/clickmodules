@@ -11,4 +11,6 @@ INCLUDE_DIRECTORIES( ${click_path}/RELAY )
 INCLUDE_DIRECTORIES( ${click_path}/TEMP_HUM )
 
 LINK_DIRECTORIES( ${click_path}/build )
+LINK_DIRECTORIES( ${click_path}/out/ARM-Debug )
+LINK_DIRECTORIES( ${click_path}/out/ARM-Release )
 
